@@ -86,7 +86,7 @@
             // 
             this.buttonUserSelShow.Location = new System.Drawing.Point(0, 105);
             this.buttonUserSelShow.Name = "buttonUserSelShow";
-            this.buttonUserSelShow.Size = new System.Drawing.Size(408, 28);
+            this.buttonUserSelShow.Size = new System.Drawing.Size(408, 42);
             this.buttonUserSelShow.TabIndex = 4;
             this.buttonUserSelShow.Text = "Отобразить Мой Выбор";
             this.buttonUserSelShow.UseVisualStyleBackColor = true;
