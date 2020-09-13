@@ -38,7 +38,6 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
             this.listBox1.Items.AddRange(new object[] {
             "Список №1, Выбор №1",
             "Список №1, Выбор №2",
@@ -46,47 +45,52 @@
             "Список №1, Выбор №4",
             "Список №1, Выбор №5"});
             this.listBox1.Location = new System.Drawing.Point(0, 0);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(201, 84);
+            this.listBox1.Size = new System.Drawing.Size(135, 56);
             this.listBox1.TabIndex = 0;
             // 
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 20;
             this.listBox2.Items.AddRange(new object[] {
             "Список №2, Выбор №1",
             "Список №2, Выбор №2",
             "Список №2, Выбор №3",
             "Список №2, Выбор №4",
             "Список №2, Выбор №5"});
-            this.listBox2.Location = new System.Drawing.Point(207, 0);
+            this.listBox2.Location = new System.Drawing.Point(138, 0);
+            this.listBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(201, 84);
+            this.listBox2.Size = new System.Drawing.Size(135, 56);
             this.listBox2.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(414, 0);
+            this.label1.Location = new System.Drawing.Point(276, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 20);
+            this.label1.Size = new System.Drawing.Size(66, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Ваш выбор:";
             // 
             // labelUserSel
             // 
             this.labelUserSel.AutoSize = true;
-            this.labelUserSel.Location = new System.Drawing.Point(517, 0);
+            this.labelUserSel.Location = new System.Drawing.Point(277, 25);
+            this.labelUserSel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelUserSel.Name = "labelUserSel";
-            this.labelUserSel.Size = new System.Drawing.Size(0, 20);
+            this.labelUserSel.Size = new System.Drawing.Size(0, 13);
             this.labelUserSel.TabIndex = 3;
+            this.labelUserSel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // buttonUserSelShow
             // 
-            this.buttonUserSelShow.Location = new System.Drawing.Point(0, 105);
+            this.buttonUserSelShow.Location = new System.Drawing.Point(0, 68);
+            this.buttonUserSelShow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonUserSelShow.Name = "buttonUserSelShow";
-            this.buttonUserSelShow.Size = new System.Drawing.Size(408, 42);
+            this.buttonUserSelShow.Size = new System.Drawing.Size(272, 27);
             this.buttonUserSelShow.TabIndex = 4;
             this.buttonUserSelShow.Text = "Отобразить Мой Выбор";
             this.buttonUserSelShow.UseVisualStyleBackColor = true;
@@ -94,16 +98,18 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(835, 159);
+            this.ClientSize = new System.Drawing.Size(557, 103);
             this.Controls.Add(this.buttonUserSelShow);
             this.Controls.Add(this.labelUserSel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
